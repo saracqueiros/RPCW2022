@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <key>RPCW:TP1</key>
+        <title>TP1</title>
+        <subtitle></subtitle>
+        <bdate>16/02/2022</bdate>
+        <edate>22/02/2022</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <workteam>
+        <worker number="PG47661">
+            <name>Sara Cristina Freitas Queirós</name>
+            <email>pg47661@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>Neste TP1, foi pedido para criar uma pagina html em que o tema escolhido foi "Japão"</p>
+    </abstract>
+    <deliverables>
+        <link url="./index.html">Pagina html </link>
+    </deliverables>
+</pr>
