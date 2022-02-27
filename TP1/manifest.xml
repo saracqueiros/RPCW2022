@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo> TPC1: Uma página web </titulo>
+        <data>2022-02-15</data>
+        <autor>
+            <id>PG47661</id>
+            <nome>Sara Cristina Freitas Queirós</nome>
+        </autor>
+        <uc> 
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p> Criação de uma página web sobre o Japão </p>
+    </resumo>
+    <resultados>
+        <resultado><url>index.html</url> <texto>Ficheiro de HTML</texto></resultado>
+    </resultados>
+</doc>
