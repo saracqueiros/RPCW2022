@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo> TPC2: Servidor Gestão páginas web </titulo>
+        <data>2022-02-29</data>
+        <autor>
+            <id>PG47661</id>
+            <nome>Sara Cristina Freitas Queirós</nome>
+        </autor>
+        <uc> 
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p> Este TPC tem como objetivo ler um ficheiro JSON e gerar uma página html para cada registo. Para fazer a gestão dos ficheiros é necessário utilizar um servidor.  </p>
+        <p> Para aceder à página de um filme basta, por exemplo: 
+            <xref>
+                <url>localhost:9876/filmes/f0</url>
+                <texto>HTML de um filme</texto>
+            </xref></p>
+      <p> Para aceder à página que lista todos os filmes: 
+            <xref>
+                <url>localhost:9876/filmes</url>
+                <texto>HTML com lista de filmes</texto>
+            </xref></p>
+    </resumo>
+    <resultados>
+        <resultado><url></url> <texto></texto></resultado>
+    </resultados>
+</doc>
