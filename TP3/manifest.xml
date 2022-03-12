@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo> TPC3: implemtentar um serviço (servidor) na porta 4000 </titulo>
+        <data>2022-03-14</data>
+        <autor>
+            <id>PG47661</id>
+            <nome>Sara Cristina Freitas Queirós</nome>
+        </autor>
+        <uc> 
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p> Este TPC tem como objetivo, a partir de um dataset de uma escola de música, 
+gerar páginas com a lista de alunos, cursos e instrumentos presentes nesse dataset.
+        </p>
+    </resumo>
+    <resultados>
+        <resultado>Para aceder à página principal basta: 
+            <xref>
+                <url>localhost:4000</url>
+                <texto>Página principal com a lista das 3 páginas a que se pode aceder</texto>
+            </xref>
+        </resultado>
+        <resultado> 
+            Para aceder à página que lista de todos os alunos: 
+            <xref>
+                <url>localhost:4000/alunos</url>
+                <texto>Lista de todos os alunos</texto>
+            </xref>
+        </resultado>  
+        <resultado> 
+            Para aceder à página que lista de todos os instrumentos: 
+            <xref>
+                <url>localhost:4000/instrumentos</url>
+                <texto>Lista de todos os instrumentos</texto>
+            </xref>
+        </resultado>  
+        <resultado> 
+            Para aceder à página que lista de todos os cursos: 
+            <xref>
+                <url>localhost:4000/cursos</url>
+                <texto>Lista de todos os cursos</texto>
+            </xref>
+        </resultado>  
+    </resultados>
+</doc>
