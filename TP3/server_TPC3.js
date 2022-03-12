@@ -7,6 +7,7 @@ headOfpage = '<head>\n' +
             '<style> table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; }' + 
             'td, th { border: 1px solid #dddddd; text-align: left;padding: 8px;} ' +
             'tr:nth-child(even) { background-color: #dddddd;}'+
+            'ul { display: table; margin: 40 ; }' + 
             '</style>'+
         '</head>\n'
 
@@ -16,14 +17,15 @@ function generateMainPage()
     '<head>\n' + 
         '<meta charset="UTF-8"/>\n'+
     '</head>\n'+
-    '<body><h1>Escola de Música! </h1>' + 
+    '<body><center><h1>Escola de Música! </h1>' + 
          '<h2>Ao que pretende aceder? </h2>' +
-         '<ul>'+
-         '<li> <a href="http://localhost:4000/alunos"> Lista de alunos </a> </li>\n'+
-         '<li> <a href="http://localhost:4000/instrumentos"> Lista de instrumentos </a> </li>\n'+
-         '<li> <a href="http://localhost:4000/cursos"> Lista de Cursos </a>  </li>\n'+
-         '</ul>'+ 
-         '</body>'+
+         
+         '<li><h3> <a href="http://localhost:4000/alunos"> Lista de alunos </a> </h3></li>\n'+
+         '<li><h3> <a href="http://localhost:4000/instrumentos"> Lista de instrumentos </a></h3> </li>\n'+
+         '<li><h3> <a href="http://localhost:4000/cursos"> Lista de Cursos </a>  </h3></li>\n'+
+        
+    
+         '</center></body>'+
          '</html>'
 
     return page;
