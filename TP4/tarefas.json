@@ -1,0 +1,57 @@
+{
+    "tarefas": [{
+            "id": 1,
+            "datainicio": "2022-03-15",
+            "datafim": "2022-02-22",
+            "pessoa": "Sara",
+            "objetivo": "realizar tpc4",
+            "tipo": "Universidade",
+            "estado": 1
+        },
+        {
+            "datainicio": "2022-03-23",
+            "datafim": "2022-03-29",
+            "pessoa": "Sara",
+            "objetivo": "realizar tpc5",
+            "tipo": "Universidade",
+            "estado": 0,
+            "id": 2
+        },
+        {
+            "datainicio": "2022-05-25",
+            "datafim": "2022-05-25",
+            "pessoa": "João",
+            "objetivo": "Ir a uma Consulta",
+            "estado": 0,
+            "tipo": "Domestica",
+            "id": 3
+        },
+        {
+            "datainicio": "2021-12-12",
+            "datafim": "2021-12-21",
+            "pessoa": "Tia Sónia",
+            "objetivo": "Enviar o projeto ao Joaquim",
+            "estado": 1,
+            "tipo": "Trabalho",
+            "id": 4
+        },
+        {
+            "datainicio": "2022-12-25",
+            "datafim": "2022-12-25",
+            "pessoa": "Jesus",
+            "objetivo": "Aniversario",
+            "estado": 0,
+            "tipo": "Domestica",
+            "id": 5
+        },
+        {
+            "datainicio": "2022-03-21",
+            "datafim": "2022-03-22",
+            "pessoa": "Mãe",
+            "objetivo": "Imprimir documentos",
+            "tipo": "Universidade",
+            "estado": 1,
+            "id": 6
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo> TPC4: Página web como TO-DO list </titulo>
+        <data>2022-03-21</data>
+        <autor>
+            <id>PG47661</id>
+            <nome>Sara Cristina Freitas Queirós</nome>
+        </autor>
+        <uc> 
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p> Este TPC tem como objetivo criar numa única página um gestor de lista de tarefas, em que deve ser possível, adicionar tarefas, remover, editar.
+        </p>
+    </resumo>
+    <resultados>
+        <resultado>Para aceder à página principal basta: 
+            <xref>
+                <url>localhost:7777/tarefas</url>
+                <texto>Página principal</texto>
+            </xref>
+        </resultado>
+        <resultado> 
+            Para aceder à página que lista de todas as tarefas a realizar: 
+            <xref>
+                <url>localhost:7777/tarefas/arealizar</url>
+                <texto>Lista de tarefas que ainda não estão realizadas</texto>
+            </xref>
+        </resultado>  
+        <resultado> 
+            Para aceder à página que lista de todas as tarefas realizadas: 
+            <xref>
+                <url>localhost:7777/tarefas/realizadas</url>
+                <texto>Lista de todas as tarefas realizadas</texto>
+            </xref>
+        </resultado>  
+    </resultados>
+</doc>
