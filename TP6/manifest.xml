@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo> TPC6: Gestor de ficheiros com Express e MongoDB </titulo>
+        <data>2022-04-04</data>
+        <autor>
+            <id>PG47661</id>
+            <nome>Sara Cristina Freitas Queirós</nome>
+        </autor>
+        <uc> 
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p> Este TPC tem como objetivo criar um gestor de ficheiros que permita fazer upload de ficheiros novos ou remover já existentes da base de dados.</p>
+        <p> A base de dados foi implementada com MongoDB. Nesta é guardado o identificador, data, tipo e descrição de cada ficheiro</p>
+    </resumo>
+    <resultados>
+        <resultado><url>/uploads/</url><texto>Pasta onde são guardados os ficheiros que o utilizador submeteu.</texto></resultado>
+        <resultado><url>/views/index.pug</url><texto>Vista criada para a página principal</texto></resultado>
+        <resultado><url>/controllers/ficheiro.js</url><texto>Ficheiro com as funções que conectam à BD</texto></resultado>
+        <resultado><url>/routes/index.js</url><texto>Rotas criadas para responder aos pedidos</texto></resultado>
+        <resultado><url>/models/ficheiro.js</url><texto>Schema da base de dados, especificando a forma como são guardados os dados de cada ficheiro</texto></resultado>
+        <resultado><url>http://localhost:3029/</url><texto>Acesso à página principal </texto></resultado>
+        <resultado><url>ficheiros.json</url><texto>Exemplo de um json com um registo para inicializar a base de dados</texto></resultado>
+    </resultados>
+</doc>
