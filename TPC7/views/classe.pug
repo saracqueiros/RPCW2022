@@ -1,0 +1,71 @@
+extends layout
+
+block content
+  h1=classe.titulo
+  p 
+    b Código: 
+    span= classe.codigo
+  p 
+    b Estado: 
+    span= classe.status
+  p 
+    b Descrição: 
+    span= classe.descricao
+
+  if Object.keys(classe.pai).length >= 1 
+    p
+      b Pai: 
+      span= classe.pai.titulo
+      
+
+  if Object.keys(classe.filhos).length >= 1 
+    h5 
+      b Descendentes: 
+    ol
+      each desc in classe.filhos 
+        li 
+          p 
+            b Título: 
+            span= desc.titulo
+          p 
+            b Código: 
+            a(href="/" + desc.codigo)= desc.codigo
+          p 
+            b Estado: 
+            span= desc.status
+
+  if classe.nivel == "3"
+    if Object.keys(classe.processosRelacionados).length > 0 
+      h4 
+        b Processos Relacionados: 
+      ol
+        each relacao in classe.processosRelacionados
+          if (relacao.idRel == "eComplementarDe" || relacao.idRel == "eCruzadoCom" ||relacao.idRel == "eSuplementoDe" ||relacao.idRel =="eSuplementoPara")
+            li 
+              if (relacao.idRel == "eComplementarDe")
+                b 
+                  i Processo Complementar 
+              else if (relacao.idRel == "eCruzadoCom") 
+                b 
+                  i Processo cruzado
+              else if (relacao.idRel == "eSuplementoPara")
+                b 
+                  i Processo suplementar para
+              else if (relacao.idRel == "eSuplementoDe")
+                b 
+                  i Processo suplementar de 
+
+
+
+              p 
+                b Título: 
+                span = relacao.titulo
+              p 
+                b Código: 
+                a(href= "/" + relacao.codigo)= relacao.codigo
+              p 
+                b Estado: 
+                span= relacao.status
+                            
+  p
+    a(href="/") Voltar à página principal

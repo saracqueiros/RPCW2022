@@ -1,0 +1,12 @@
+extends layout
+block content
+  h1.navbar-header CLAV: Classificação e Avaliação da Informação Pública
+  table
+    tr 
+      th Título
+      th Código 
+    each elem in classes 
+      tr 
+        td= "* " + elem.titulo 
+        td 
+          a(href= "/" + elem.codigo)= elem.codigo

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo> TPC7: CLAV </titulo>
+        <data>2022-04-04</data>
+        <autor>
+            <id>PG47661</id>
+            <nome>Sara Cristina Freitas Queirós</nome>
+        </autor>
+        <uc> 
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p> Este TPC tem como objetivo, a partir de uma API, catalogar as calsses existentes.</p>
+    </resumo>
+    <resultados>
+        <resultado><url>http://localhost:3005/</url><texto>Acesso à página principal </texto></resultado>
+        <resultado> Ficheiros como "index.js", "classe.pug" e "index.pug" foram alterados de modo a obter o resultado final.</resultado> 
+    </resultados>
+</doc>
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+    <resumo> 
+        <p>O trabalho desta semana consistiu em ir buscar informações a uma API de dados (CLAV) e dispô-las num site, ordenadas pelas suas classes</p>
+    </resumo>
+    <resultados>
+        <resultado><url>/views/index.pug</url><texto>View da página apresentada ao utilizador com as classes</texto></resultado>
+        <resultado><url>/views/classe.pug</url><texto>View da página apresentada ao utilizador com a informação de cada classe</texto></resultado>
+        <resultado><url>/routes/index.js</url><texto>Gestão das páginas e dos pedidos à aplicação</texto></resultado>
+    </resultados>
+</doc>
