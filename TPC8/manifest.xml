@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo> TPC8: Adição e Remoção de Parágrafos </titulo>
+        <data>2022-04-04</data>
+        <autor>
+            <id>PG47661</id>
+            <nome>Sara Cristina Freitas Queirós</nome>
+        </autor>
+        <uc> 
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p> Este TPc tem como obejtivo expandir o projeto iniciado na aula. Devemos adicionar operações de alteração e remoção de parágrafos.</p>
+    </resumo>
+    <resultados>
+            <resultado>
+                    <url>index.html</url><texto> Acesso à página principal.</texto>
+            </resultado>
+             <resultado>
+                    <url>script.js</url><texto> Atualização da página principal.</texto>
+            </resultado>
+    </resultados>
+</doc>
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+    <resumo> 
+        <p>O trabalho desta semana consistiu em ir buscar informações a uma API de dados (CLAV) e dispô-las num site, ordenadas pelas suas classes</p>
+    </resumo>
+    <resultados>
+        <resultado><url>/views/index.pug</url><texto>View da página apresentada ao utilizador com as classes</texto></resultado>
+        <resultado><url>/views/classe.pug</url><texto>View da página apresentada ao utilizador com a informação de cada classe</texto></resultado>
+        <resultado><url>/routes/index.js</url><texto>Gestão das páginas e dos pedidos à aplicação</texto></resultado>
+    </resultados>
+</doc>
