@@ -1,0 +1,43 @@
+HTML
+XML
+
+--> Textos (path): metadados
+
+/a
+//div [@elem = "__"]
+
+coleções
+
+.li
+.path
+.img
+.tabelas
+
+
+
+
+-------------------------
+Usamos o flit
+
+flit init 
+--> cria um ficheiro 
+
+flit build
+
+flit install (nao faz instalacao mm , cria um link para isso)
+
+
+https://www.jonsay.co.uk/dictionary.php?langa=English&langb=Portuguese&category=animals
+
+copiar um destes links para criar a tabela 
+
+no pyproject crio os script que corro assim:
+    wstables "https://www.jonsay.co.uk/dictionary.php?langa=English&langb=Portuguese&category=animals"
+
+
+
+
+documentação do ficheiro usando pydoc:
+    - se comentar dentro de uma função isso fica na documentação 
+    ** pydoc wsextract**
+    

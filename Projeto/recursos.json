@@ -1,0 +1,39 @@
+[
+    {
+        "criacao": "15-10-2020",
+        "submissao": "15-10-2022",
+        "produtor": "sara",
+        "submissor": "esteves",
+        "titulo": "ficheiro.txt",
+        "tipo": "txt",
+        "desc": "não serve para nd"
+
+    },
+    {
+        "criacao": "17-10-2020",
+        "submissao": "17-10-2022",
+        "produtor": "sara",
+        "submissor": "esteves",
+        "titulo": "ficheiro.txt",
+        "tipo": "txt",
+        "desc": "não serve para nd"
+    },
+    {
+        "criacao": "18-10-2020",
+        "submissao": "18-10-2022",
+        "produtor": "sara",
+        "submissor": "esteves",
+        "titulo": "ficheiro.pdf",
+        "tipo": "pdf",
+        "desc": "não serve para nd"
+    },
+    {
+        "criacao": "18-10-2020",
+        "submissao": "18-10-2022",
+        "produtor": "sara",
+        "submissor": "esteves",
+        "titulo": "ficheiro2.pdf",
+        "tipo": "pdf",
+        "desc": "não serve para nd"
+    }
+]

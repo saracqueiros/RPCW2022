@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Repositorio de Recursos Didáticos
+    link(rel='stylesheet', href='https://www.w3schools.com/w3css/4/w3.css')
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css")
+  body(style="background-image: url('https://fiberc.com/wp-content/uploads/bigstock-Server-Room-In-Datacenter-94930988.jpg');")
+    .w3-bar.w3-light-grey.w3-xlarge.w3-top
+      a.w3-bar-item.w3-button.w3-indigo(href='/' )
+        icon(class="bi bi-house-fill") &#160;
+        b RRD
+      if (log == false)
+        a.w3-bar-item.w3-button.w3-right(href='/login' )
+          icon(class="bi bi-box-arrow-in-right") &#160; Entrar
+        a.w3-bar-item.w3-button.w3-right(href='/login' ) Registar
+      else 
+        a.w3-bar-item.w3-button(href='/api/recursos' )
+          icon(class="bi bi-archive-fill") &#160; 
+          b Recursos
+        a.w3-bar-item.w3-button.w3-right(href='/logout' )
+          icon(class="bi bi-box-arrow-in-left") &#160; Sair
+    br
+    br
+    br
+
+    block content
+

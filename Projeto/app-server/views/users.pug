@@ -1,0 +1,60 @@
+extends layout
+
+block content
+  .w3-container.w3-white.w3-border.w3-round-large.w3-margin
+    h1.w3-margin.w3-center Utilizadores
+    form.w3-container(action="/api/users" method="get")
+      .w3-row
+        .w3-col.w3-margin(style="width:80px")
+          button.w3-btn.w3-round-large.w3-indigo
+            icon(class="bi bi-funnel-fill") &#160; Filtrar
+        .w3-col.w3-margin-top.w3-margin-left.w3-margin-bottom(style="width:15%")        
+          select.w3-select.w3-border(name="level")
+            option(value="" disabled selected) Selecione um Nível..
+            option(value="admin") Admin
+            option(value="prod") Produtor
+            option(value="user") Utilizador
+
+    form.w3-container(action="/api/users" method="get")
+      .w3-container(id="barra_de_pesquisa")
+        .w3-row
+          .w3-col.w3-margin-top.w3-margin-left.w3-margin-bottom(style="width:40px")
+            i.w3-xlarge(class="bi bi-search") 
+          .w3-rest
+            input.w3-input.w3-animate-input.w3-cell.w3-border.w3-margin-top.w3-margin-bottom(type="text" name="username" placeholder="Procurar Utilizador..." style="width:30%")
+
+    form.w3-container(action="/api/users" method="post")
+      .w3-row 
+        .w3-col.w3-margin(style="width:35%")
+          label Nome de Utilizador
+          input.w3-input.w3-border(type="text" name="username" placeholder="Insira um Nome de Utilizador")
+        .w3-col.w3-margin(style="width:35%")
+          label Palavra-passe
+          input.w3-input.w3-border(type="password" name="password" placeholder="Insira uma Palavra-passe")
+        .w3-col.w3-margin(style="width:10%")
+          button.w3-btn.w3-round-large.w3-indigo.w3-margin-top(type="submit" style="height:45px")
+            icon(class="bi bi-person-plus-fill") &#160; Adicionar Utilizador
+              
+
+    .w3-container.w3-margin
+        table.w3-table-all
+            tr.w3-indigo
+                th Id
+                th Username
+                th Nível
+                th
+                th
+            each u in lista_users
+                tr
+                    td= u._id
+                    td= u.username
+                    td= u.level
+                    td 
+                        a(href="/api/users/editar/" + u._id )
+                          i.w3-btn.w3-round.w3-large.w3-hover-indigo.w3-border(class="bi bi-pencil-square")
+                    td 
+                        form.w3-container(action="/api/users/eliminar/"+ u._id method="post")
+                          button.w3-btn.w3-round.w3-hover-red.w3-border(type="submit")
+                            i.w3-large(class="bi bi-trash")
+   
+                

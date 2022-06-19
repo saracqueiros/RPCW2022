@@ -1,0 +1,78 @@
+extends layout
+
+block content
+  .w3-container.w3-white.w3-border.w3-round-large.w3-margin
+    h1.w3-margin.w3-center Recursos
+    form.w3-container(action="/api/recursos" method="get")
+      .w3-row
+        .w3-col.w3-margin(style="width:80px")
+          button.w3-btn.w3-round-large.w3-indigo
+            icon(class="bi bi-funnel-fill") &#160; Filtrar
+        .w3-col.w3-margin-top.w3-margin-left.w3-margin-bottom(style="width:15%")        
+          select.w3-select.w3-border(name="tipo")
+            option(value="" disabled selected) Selecione um Tipo..
+            option(value="pdf") PDF
+            option(value="txt") TXT
+            option(value="xml") XML
+
+    form.w3-container(action="/api/recursos" method="get")
+      .w3-container(id="barra_de_pesquisa")
+        .w3-row
+          .w3-col.w3-margin-top.w3-margin-left.w3-margin-bottom(style="width:40px")
+            i.w3-xlarge(class="bi bi-search") 
+          .w3-rest
+            input.w3-input.w3-animate-input.w3-cell.w3-border.w3-margin-top.w3-margin-bottom(type="text" name="titulo" placeholder="Procurar..." style="width:30%")
+
+    .w3-container.w3-margin
+        table.w3-table-all
+            tr
+                th Id
+                th Data de Submissão
+                th Título
+                th Tipo
+                th Descrição
+                th
+                if permissao=='admin'
+                    th
+            each t in lista
+                tr
+                    td= t._id
+                        a(style="text-decoration:none" href="/api/recurso/"+ t._id) &#160; &#160;
+                          i.w3-xlarge(class="bi bi-box-arrow-up-right")
+                      
+                    td= t.submissao
+                    td= t.titulo
+                    td= t.tipo
+                    td= t.desc
+                    td 
+                        a(style="text-decoration:none" href="/api/recursos/transferir/"+t.submissor+"/" + t.titulo)
+                          i.w3-btn.w3-round.w3-large.w3-hover-indigo.w3-border(class="bi bi-download")
+                    if permissao=='admin'
+                        th 
+                            a(href="/api/recursos/eliminar/" + t._id) 
+                                i.w3-btn.w3-round.w3-large.w3-hover-red.w3-border(class="bi bi-trash")
+
+  
+  if (permissao=='admin' || permissao=='prod')
+    .w3-container.w3-white.w3-border.w3-round-large.w3-margin
+      h1.w3-margin.w3-center Submissão de Recursos
+      form.w3-container(action="/api/recursos" method="post" enctype="multipart/form-data") 
+        .w3-row
+            .w3-container.w3-margin
+                label Descrição: 
+                input.w3-input.w3-cell.w3-border(type="text" name="desc")
+            .w3-container.w3-margin
+                label Ficheiro: 
+                input.w3-input.w3-cell.w3-border(type="file" name="ficheiro")
+            .w3-container.w3-margin
+              button.w3-button.w3-round-large.w3-indigo(type="submit" value="enviar" height="50")
+                icon(class="bi bi-upload") &#160; Submeter
+
+  if (permissao=='admin')
+    .w3-container.w3-white.w3-border.w3-round-large.w3-margin
+      h1.w3-margin.w3-center Painel Admin
+      a.w3-margin(href="/api/users")
+        icon.w3-btn.w3-round.w3-large.w3-hover-indigo.w3-border.w3-margin(class="bi bi-people-fill") &#160; Gerir Utilizadores
+
+
+                

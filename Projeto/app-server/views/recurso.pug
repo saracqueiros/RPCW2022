@@ -1,0 +1,56 @@
+extends layout
+
+block content
+    .w3-container.w3-white.w3-border.w3-round-large.w3-margin
+        h1 Recurso 
+        .w3-container.w3-margin
+            table.w3-table-all
+                tr
+                    th Id
+                    th Data de Submissão
+                    th Título
+                    th Descrição
+                    th Opções
+                    th
+                    tr
+                        td= r._id
+                        td= r.submissao
+                        td= r.titulo
+                        td= r.desc
+                        td 
+                            a(href="/api/recursos/transferir/" + r._id) Transferir
+                        td 
+                            a(href="/api/recursos/eliminar/" + r._id) 
+                                    i.w3-xlarge(class="bi bi-trash")
+
+        h5 Comentários 
+        .w3-container.w3-margin
+            table.w3-table-all
+                tr
+                    th Utilizador
+                    th Comentário
+                    th Avaliação
+                each t in r.comentarios
+                    tr
+                        td= t.user
+                        td= t.comm
+                        td= t.aval 
+                            i.w3-xlarge(class="bi bi-star-fill")
+                    
+
+        .w3-container.w3-margin.w3-border
+            .w3-container.w3-gray
+                h3 Introduza o seu comentário:
+            form.w3-container(action='/api/recursos/comentar/'+r._id method='POST')
+                label Comentário:
+                input.w3-input(type="comentario" name="com")
+                label Avaliação (0-5):
+                input.w3-input(type="avaliacao" name="aval")
+                input.w3-btn.w3-gray(type="submit" value="Avaliar")
+                    
+
+        if permissao == 'admin'
+            a(href='/api/recurso/alterarInfo/'+r._id) Alterar informações do ficheiro 
+
+
+                
